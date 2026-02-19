@@ -9,12 +9,13 @@ import ChallengeHauntedHouse from './challenges/haunted-house/index.jsx';
 import ChallengeOriginalCalculator from './challenges/original-calculator/index.jsx';
 import ChallengeTop100Colors from './challenges/top-100-colors/index.jsx';
 import EnemiesInTheCastle from './challenges/enemies-in-the-castle/index.jsx';
+import WordPower from './challenges/word-power/index.jsx';
 
 function App() {
   return (
     <div>
       <>
-        <EnemiesInTheCastle />
+        <WordPower />
       </>
     </div>
   );
