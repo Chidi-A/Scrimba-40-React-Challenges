@@ -11,13 +11,14 @@ import ChallengeTop100Colors from './challenges/top-100-colors/index.jsx';
 import EnemiesInTheCastle from './challenges/enemies-in-the-castle/index.jsx';
 import WordPower from './challenges/word-power/index.jsx';
 import MillionDollarBankAccount from './challenges/million-dollar-bank-account/index.jsx';
+import SaveTheDashboard from './challenges/save-the-dashboard/index.jsx';
+import StockTracker from './challenges/stock-tracker/index.jsx';
+import WeirdWikipediaArticles from './challenges/weird-wikipedia-articles/index.jsx';
 
 function App() {
   return (
     <div>
-      <>
-        <MillionDollarBankAccount />
-      </>
+      <WeirdWikipediaArticles />
     </div>
   );
 }

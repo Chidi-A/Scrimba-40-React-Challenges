@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
-  animation: fade-in 1s ease-in-out both;
 }
 
 .the-legend-of-scrimba {
+  animation: fade-in 1s ease-in-out both;
   margin: 0;
   background: #0e5135;
   display: flex;
