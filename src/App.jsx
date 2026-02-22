@@ -15,11 +15,12 @@ import SaveTheDashboard from './challenges/save-the-dashboard/index.jsx';
 import StockTracker from './challenges/stock-tracker/index.jsx';
 import WeirdWikipediaArticles from './challenges/weird-wikipedia-articles/index.jsx';
 import FireStarter from './challenges/fire-starter/index.jsx';
+import MoodTracker from './challenges/mood-tracker/index.jsx';
 
 function App() {
   return (
     <div>
-      <FireStarter />
+      <MoodTracker />
     </div>
   );
 }

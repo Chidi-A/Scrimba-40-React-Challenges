@@ -65,7 +65,7 @@ export default function App() {
   }
 
   function handleWoodLeave() {
-    if (torchEquipped && woodKindling) setWoodKindling(false);
+    if (torchEquipped && woodKindling) setWoodOnFire(true);
   }
 
   return (

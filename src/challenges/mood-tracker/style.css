@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+.mood-tracker body {
+  font-family: 'Mukta', sans-serif;
+  background: url('./images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 75% 50%;
+  margin: 0;
+  color: #4d4946;
+}
+
+.mood-tracker h1 {
+  font-weight: 800;
+  font-size: 52px;
+  color: #fbf9ee;
+  text-shadow: 0 1px 2px black;
+  margin: 0;
+}
+
+.mood-tracker .date-container {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mood-tracker .date-container p {
+  margin: 0 0 20px 0;
+}
+
+.mood-tracker .rating-outline {
+  width: 300px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mood-tracker .rating-outline p {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.mood-tracker .rating-fill {
+  height: 100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood-tracker .right-curve {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.mood-tracker .red {
+  background: #fc440faa;
+}
+
+.mood-tracker .green {
+  background: #20fc8faa;
+}
+
+.mood-tracker .yellow {
+  background: #f6ca00aa;
+}
+
+.mood-tracker .blue {
+  background: #5adbffaa;
+}
+
+.mood-tracker .menu-wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 450px;
+  min-width: 300px;
+  height: 100vh;
+  padding: 20px 0;
+}
+
+.mood-tracker .main-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #fbf9eeaa;
+  gap: 20px;
+  padding: 20px 30px;
+  box-shadow: 0 16px 16px 4px #111111;
+}
+
+.mood-tracker .menu-item-button {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  background: none;
+  border: none;
+}
+
+.mood-tracker .menu-item-button:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.mood-tracker .menu-item-button:active,
+.mood-tracker .menu-item-button:disabled {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.mood-tracker .menu-item-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.mood-tracker .menu-icon {
+  width: 20px;
+  height: 23px;
+}
+
+.mood-tracker .menu-icon.highlights {
+  width: 16px;
+}
+
+.mood-tracker .menu-item-button p {
+  margin: 0;
+}
+
+.mood-tracker .header-text-container,
+.mood-tracker .main-menu-container {
+  border-radius: 10px;
+}
+
+.mood-tracker .header-text-container {
+  background: #6ea4bfcd;
+  text-align: center;
+  box-shadow: 0 16px 16px 4px #111111;
+  padding: 30px;
+}
+
+.mood-tracker .main-container {
+  width: 100vw;
+  margin: 100vh auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  background: #f0e1c7;
+  padding: 30px;
+}
+
+.mood-tracker .bold {
+  font-weight: 600;
+}
+
+.mood-tracker .percent {
+  font-size: 0.8em;
+}
+
+.mood-tracker .diary-card,
+.mood-tracker .sub-header {
+  background: #fbf9ee;
+  width: 400px;
+  box-shadow: 0 8px 8px 4px #11111199;
+
+  border-radius: 10px;
+}
+
+.mood-tracker .diary-card {
+  padding: 40px;
+}
+
+.mood-tracker .sub-header {
+  font-size: 36px;
+  min-width: 400px;
+  max-width: 850px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mood-tracker .emotion-and-activity-overall-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mood-tracker .emotion-container,
+.mood-tracker .activity-container {
+  width: 50%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.mood-tracker .container-title {
+  margin: 0 0 30px 20px;
+}
+
+.mood-tracker .emotion-container {
+  padding-right: 5px;
+}
+
+.mood-tracker .list-of-elements-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mood-tracker .activity-container .list-of-elements-container,
+.mood-tracker .activity-container .container-title {
+  padding-left: 40px;
+}
+
+.mood-tracker .activity-container {
+  border-left: 1px solid lightgray;
+}
+
+.mood-tracker .icon-and-text-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.mood-tracker .icon {
+  font-size: 30px;
+  font-family:
+    'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', Times, Symbola,
+    Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
+}
+
+.mood-tracker .rating-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.mood-tracker .rating-container p {
+  text-align: center;
+}
+
+.mood-tracker .notes-container {
+  margin: 50px 0 10px 0;
+  border-top: 1px solid lightgray;
+}
+.mood-tracker .notes-container h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.mood-tracker .notes-container p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+/* 
+@keyframes flyDown {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes flyUp {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }  
+} */
+
+@media (min-width: 909px) {
+  .mood-tracker .sub-header {
+    flex-basis: 100%;
+  }
+}
