@@ -24,11 +24,12 @@ export default function ToDoList() {
     setNewItemInput(event.target.value);
   }
 
-  const div = document.querySelector('.to-do-list-container');
+  const listContainerRef = React.useRef(null);
 
   React.useEffect(() => {
-    if (div) {
-      div.scrollTop = div.scrollHeight;
+    if (listContainerRef.current) {
+      listContainerRef.current.scrollTop =
+        listContainerRef.current.scrollHeight;
     }
   }, [listData]);
 
@@ -56,7 +57,7 @@ export default function ToDoList() {
 
   React.useEffect(() => {
     if (autoCompleteRequested) {
-      let timeOut = setTimeout(() => {
+      let _timeOut = setTimeout(() => {
         setAutoCompleteRequested(false);
         setListData((prevData) => {
           return prevData.map((item) => {
@@ -87,7 +88,11 @@ export default function ToDoList() {
 
   const currentList = listData.map((item) => {
     return (
-      <div className="to-do-list-item-container" key={item.id}>
+      <div
+        className="to-do-list-item-container"
+        key={item.id}
+        ref={listContainerRef}
+      >
         <label className="checkbox-label">
           <input
             type="checkbox"
