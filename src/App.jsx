@@ -16,11 +16,12 @@ import StockTracker from './challenges/stock-tracker/index.jsx';
 import WeirdWikipediaArticles from './challenges/weird-wikipedia-articles/index.jsx';
 import FireStarter from './challenges/fire-starter/index.jsx';
 import MoodTracker from './challenges/mood-tracker/index.jsx';
+import Autocomplete from './challenges/autocomplete/index.jsx';
 
 function App() {
   return (
     <div>
-      <MoodTracker />
+      <Autocomplete />
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function Menu(props) {
 
   React.useEffect(() => {
     if (props.skip) scrollDown();
-  }, []);
+  }, [props.skip]);
 
   return (
     <div className="menu-wrapper">

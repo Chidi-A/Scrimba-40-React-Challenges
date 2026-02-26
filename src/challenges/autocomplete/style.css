@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+.autocomplete body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #9ea3b0;
+  color: #090c02;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.autocomplete .wrapper {
+  background: #3d5a80;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.autocomplete header {
+  padding: 20px;
+  background: #3d5a80;
+  border: none;
+  border: none;
+}
+
+.autocomplete h1,
+.autocomplete h2 {
+  margin: 0;
+}
+
+.autocomplete h1 {
+  color: #d88c9a;
+  font-size: 34px;
+}
+
+.autocomplete h2 {
+  margin-top: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: #98c1d9;
+}
+
+.autocomplete header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.autocomplete .header-icon-container {
+  background: black;
+  height: 15px;
+  width: 15px;
+}
+
+.autocomplete .header-icon {
+  height: 28px;
+  filter: invert(83%) sepia(10%) saturate(1174%) hue-rotate(170deg)
+    brightness(93%) contrast(81%);
+}
+
+.autocomplete .to-do-list-container {
+  padding: 10px 0 20px 0;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  background: #98c1d9;
+  height: 350px;
+  width: 300px;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.autocomplete .to-do-list-item-container {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.autocomplete input {
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.autocomplete .new-item-label {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  margin-top: 5px;
+}
+
+.autocomplete .new-item-input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: none;
+  margin-left: 5px;
+  margin-right: 20px;
+  font-size: 16px;
+  border: none;
+  resize: none;
+  vertical-align: center;
+}
+
+.autocomplete .new-item-input:hover {
+  cursor: text;
+}
+
+.autocomplete .new-item-input:focus {
+  cursor: text;
+  background: #eeeeee83;
+  outline: none;
+}
+
+.autocomplete .add-item-icon {
+  height: 25px;
+}
+
+.autocomplete .add-item-icon:hover {
+  cursor: pointer;
+  filter: invert(69%) sepia(20%) saturate(755%) hue-rotate(300deg)
+    brightness(88%) contrast(92%);
+}
+
+.autocomplete .faded {
+  opacity: 0.2;
+}
+
+.autocomplete .checkbox-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  width: 100%;
+}
+
+.autocomplete .checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.autocomplete .checkmark {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  margin: auto 0;
+  left: -12px;
+  height: 25px;
+  width: 25px;
+  background-color: #e1e2ef;
+  border: solid gray 1px;
+  border-radius: 4px;
+  transform: translateY(-1px);
+}
+
+.autocomplete .checkmark:hover {
+  background-color: #d88c9a;
+}
+
+.autocomplete .checkbox-label input:checked ~ .checkmark {
+  background-color: black;
+}
+
+.autocomplete .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.autocomplete .checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.autocomplete .checkbox-label .checkmark:after {
+  left: 0.4rem;
+  top: 0.2rem;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.autocomplete .to-do-list-item-text {
+  margin-left: 25px;
+}
+
+.autocomplete .crossed-out {
+  text-decoration: line-through;
+}
+
+.autocomplete .all-progress-bars-container {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  padding-right: 20px;
+}
+
+.autocomplete .progress-bar-container {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid black;
+  height: 2em;
+}
+
+.autocomplete .progress-bar-content {
+  height: 100%;
+  animation: progress-animation 2s linear both;
+}
+
+.autocomplete .bottom-bar-container {
+  display: flex;
+  height: 50px;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  background: #3d5a80;
+}
+
+.autocomplete .bottom-bar-container div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5px;
+}
+
+.autocomplete .icon {
+  height: 40%;
+}
+
+.autocomplete .icon:hover {
+  cursor: pointer;
+  filter: invert(78%) sepia(46%) saturate(284%) hue-rotate(172deg)
+    brightness(88%) contrast(91%);
+}
+
+.autocomplete .do-it-button-container {
+  display: flex;
+  padding: 20px;
+  margin-top: -1px;
+  justify-content: center;
+  background: #98c1d9;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.autocomplete button {
+  position: relative;
+  padding: 1.3em;
+  border: none;
+  background: #d88c9a;
+  color: #e1e2ef;
+  font-weight: 800;
+  transition: 0.2s;
+  font-size: 14px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  box-shadow:
+    #3d5a80 0px 7px 2px,
+    #000 0px 8px 5px;
+}
+
+.autocomplete button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.autocomplete button:active {
+  top: 4px;
+  box-shadow:
+    #3d5a80 0px 3px 2px,
+    #000 0px 3px 5px;
+}
+
+.autocomplete button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+    background: #d88c9a;
+  }
+
+  100% {
+    width: 100%;
+    background: #d88c9a;
+  }
+}
