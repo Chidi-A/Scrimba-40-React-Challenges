@@ -19,11 +19,13 @@ import MoodTracker from './challenges/mood-tracker/index.jsx';
 import Autocomplete from './challenges/autocomplete/index.jsx';
 import AntiMotivational from './challenges/anti-motivational/index.jsx';
 import FrontendBirthdayCards from './challenges/frontend-birthday-cards/index.jsx';
+import ChallengeFileUploader from './challenges/file-uploader/index.jsx';
+import ChallengePhotoEditor from './challenges/photo-editor/index.jsx';
 
 function App() {
   return (
     <div>
-      <FrontendBirthdayCards />
+      <ChallengePhotoEditor />
     </div>
   );
 }
