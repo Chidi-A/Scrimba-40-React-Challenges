@@ -18,11 +18,12 @@ import FireStarter from './challenges/fire-starter/index.jsx';
 import MoodTracker from './challenges/mood-tracker/index.jsx';
 import Autocomplete from './challenges/autocomplete/index.jsx';
 import AntiMotivational from './challenges/anti-motivational/index.jsx';
+import FrontendBirthdayCards from './challenges/frontend-birthday-cards/index.jsx';
 
 function App() {
   return (
     <div>
-      <AntiMotivational />
+      <FrontendBirthdayCards />
     </div>
   );
 }
