@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+.weather-app {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.weather-app h1 {
+  font-size: 1rem;
+}
+
+.weather-app .icon {
+  margin-top: 1.6rem;
+  font-size: 6rem;
+}
+
+.weather-app .condition-text {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.weather-app .day {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.weather-app .temp-range-container div :first-child {
+  font-size: 2rem;
+  margin: 0;
+  padding-left: 7px;
+}
+
+.weather-app .temp-range-container div :last-child {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.weather-app .temp-range-container div :first-child {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.weather-app .temp-range-container div :last-child {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.weather-app .low-temp-data {
+  color: #1e91d6;
+}
+
+.weather-app .high-temp-data {
+  color: #d13440;
+}
+
+/* ----- Backgrounds ----- */
+
+.weather-app .sunny-background {
+  background-image: url('./sunny-background.jpg');
+}
+
+.weather-app .rainy-background {
+  background-image: url('./rainy-background.jpg');
+}
+
+.weather-app .snowy-background {
+  background-image: url('./snowy-background.jpg');
+}
+
+/* ----- Layout ----- */
+
+.weather-app {
+  margin: 0;
+  background: lightgray;
+}
+
+.weather-app .app-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.weather-app .weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(250, 250, 250, 0.8);
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  position: relative;
+}
+
+.weather-app .temp-range-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.weather-app .temp-range-container div {
+  text-align: center;
+  width: 65px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* ----- Test button ----- */
+
+.weather-app button {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  background: #e58b8b;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.weather-app button:hover {
+  background: #d38b8b;
+}
+
+.weather-app button:active {
+  transform: translate(0em, 0.1em);
+}
+
+.weather-app button:focus-visible {
+  outline: 1px solid #eeeeee;
+}
+
+.weather-app button:focus:not(:focus-visible) {
+  outline: none;
+}

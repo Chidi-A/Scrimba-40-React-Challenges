@@ -21,11 +21,17 @@ import AntiMotivational from './challenges/anti-motivational/index.jsx';
 import FrontendBirthdayCards from './challenges/frontend-birthday-cards/index.jsx';
 import ChallengeFileUploader from './challenges/file-uploader/index.jsx';
 import ChallengePhotoEditor from './challenges/photo-editor/index.jsx';
+import ChallengeSpamNewsletter from './challenges/spam-newsletter/index.jsx';
+import ChallengeWeatherApp from './challenges/weather-app/index.jsx';
+import ChallengeReadMeLater from './challenges/read-me-later/index.jsx';
+import ChallengeFingerStrengthTest from './challenges/finger-strength-test/index.jsx';
+import ChallengeBoredomBlaster3000 from './challenges/boredom-blaster-3000/index.jsx';
+import ChallengeSonnetCentral from './challenges/sonnet-central/index.jsx';
 
 function App() {
   return (
     <div>
-      <ChallengePhotoEditor />
+      <ChallengeSonnetCentral />
     </div>
   );
 }

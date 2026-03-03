@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+.read-me-later {
+  margin: 0;
+  font-family:
+    'Courier Prime',
+    Courier New,
+    Courier New,
+    Courier,
+    monospace;
+  background: #508ca4;
+  display: flex;
+  justify-content: center;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+.read-me-later .wrapper {
+  width: 400px;
+  min-height: 100vh;
+  position: relative;
+  background: #edede9;
+}
+
+.read-me-later header {
+  height: 100px;
+  position: sticky;
+  top: -1px;
+  background: #d6ccc2;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 33px;
+}
+
+.read-me-later .header-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.read-me-later h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #522a27;
+}
+
+.read-me-later h3 {
+  margin: 0 0 10px 0;
+  font-size: 21px;
+  color: #161b33;
+}
+
+.read-me-later .header-top-container img {
+  height: 21px;
+  margin-right: 8px;
+  transform: translateY(-3px);
+  filter: invert(18%) sepia(4%) saturate(4461%) hue-rotate(316deg)
+    brightness(82%) contrast(104%);
+}
+
+.read-me-later .header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-me-later .header-button-container {
+  display: flex;
+  width: 300px;
+}
+
+.read-me-later header button {
+  padding: 10px;
+  width: 50px;
+  text-align: end;
+  border: none;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+}
+
+.read-me-later .favorites {
+  background-image: url(./heart-solid.svg);
+  background-size: 17px;
+  background-position: 33% 50%;
+}
+
+.read-me-later .archived {
+  background-image: url(./box-archive-solid.svg);
+  background-size: 16px;
+}
+
+.read-me-later .trash {
+  background-image: url(./trash-can-solid.svg);
+  background-size: 14px;
+}
+
+.read-me-later .search-container {
+  display: flex;
+  width: 250px;
+  margin-right: 15px;
+  height: 25px;
+  background: #dee2e6;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.read-me-later .search-container img {
+  height: 50%;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.read-me-later .search-container input {
+  height: 100%;
+  width: 80%;
+  margin-left: -20px;
+  padding-left: 30px;
+  border: none;
+  background: none;
+}
+
+.read-me-later .search-container input:focus {
+  outline: none;
+}
+
+.read-me-later .article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.read-me-later .article-container img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.read-me-later .article-text-container {
+  overflow: hidden;
+  transition: all linear 0.5s;
+}
+
+.read-me-later .read-more-button {
+  width: 200px !important;
+  margin: 10px;
+  color: #508ca4;
+}
+
+.read-me-later .expanded {
+  min-height: 300px;
+  max-height: 800px;
+  overflow: scroll;
+}
+
+.read-me-later .minimized {
+  min-height: 47px;
+  max-height: 47px;
+}
+
+.read-me-later .article-buttons-container {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.read-me-later .article-container button {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50%;
+  border: none;
+  background: none;
+}
+
+.read-me-later .article-container button:hover {
+  opacity: 0.6;
+}
+
+.read-me-later .article-container .add-to-favorites-button {
+  background-image: url('./heart-regular.svg');
+}
+
+.read-me-later .article-container .add-to-favorites-button.favorited {
+  background-image: url('./heart-solid.svg');
+
+  filter: invert(19%) sepia(81%) saturate(1414%) hue-rotate(322deg)
+    brightness(91%) contrast(95%);
+}
+
+.read-me-later .article-container .add-to-favorites-button:hover {
+  background-image: url('./heart-solid.svg');
+}
+
+.read-me-later .article-container .add-to-archive-button {
+  background-image: url('./box-archive-solid.svg');
+}
+
+.read-me-later .article-container .add-to-trash-button {
+  background-image: url('./trash-can-solid.svg');
+}
+
+.read-me-later .article-container button:hover {
+  cursor: pointer;
+}
+
+.read-me-later a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.read-me-later a:hover {
+  color: #4a4e69;
+}
+
+.read-me-later p {
+  font-size: 16px;
+  text-align: start;
+  margin: 10px 0 0 10px;
+  padding: 0 20px;
+  line-height: 20px;
+}
+
+.read-me-later p.no-articles-message {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.read-me-later button:focus {
+  outline: 1px solid black;
+}
+
+.read-me-later button:focus:not(:focus-visible) {
+  outline: 0;
+}
