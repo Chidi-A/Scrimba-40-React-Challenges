@@ -134,7 +134,7 @@
 }
 
 .sonnet-central button,
-button:focus {
+.sonnet-central button:focus {
   position: absolute;
   left: 240px;
   font-size: 17px;

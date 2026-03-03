@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.employee-spying-program {
+  margin: 0;
+  background: #4a4e69;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.employee-spying-program div {
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.employee-spying-program header {
+  width: 100%;
+  max-height: 150px;
+  max-width: 500px;
+  text-align: center;
+  background: #c9ada7;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.employee-spying-program h1 {
+  font-size: 27px;
+  margin: 10px 0;
+  color: #22223b;
+  background: #8dab7f;
+  border-radius: 10px;
+  padding: 5px;
+  width: 75%;
+}
+
+@media (max-width: 420px) {
+  .employee-spying-program h1 {
+    font-size: 16px;
+  }
+}
+
+.employee-spying-program h1 span {
+  cursor: pointer;
+}
+
+.employee-spying-program header div {
+  background: #c0e6de;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.employee-spying-program h3 {
+  font-size: 17px;
+  margin: 0;
+  color: #01200f;
+}
+
+@media (max-width: 420px) {
+  .employee-spying-program h3 {
+    font-size: 12px;
+  }
+}
+
+.employee-spying-program span {
+  text-decoration: line-through;
+}
+
+.employee-spying-program textarea {
+  margin-top: 10px;
+  width: 100%;
+  flex: 1;
+  max-width: 420px;
+  resize: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f2e9e4;
+  font-family:
+    Courier New,
+    Courier,
+    monospace;
+  font-weight: 700;
+}
+
+.employee-spying-program textarea:focus {
+  outline: 2px solid #22223b;
+}

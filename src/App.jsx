@@ -27,11 +27,15 @@ import ChallengeReadMeLater from './challenges/read-me-later/index.jsx';
 import ChallengeFingerStrengthTest from './challenges/finger-strength-test/index.jsx';
 import ChallengeBoredomBlaster3000 from './challenges/boredom-blaster-3000/index.jsx';
 import ChallengeSonnetCentral from './challenges/sonnet-central/index.jsx';
+import ChallengeVirtualRealitySite from './challenges/virtual-reality-site/index.jsx';
+import ChallengeEmojiPersonalityTest from './challenges/emoji-personality-test/index.jsx';
+import ChallengeEmployeeSpyingProgram from './challenges/employee-spying-program/index.jsx';
+import ChallengeScrimbafest from './challenges/scrimbafest/index.jsx';
 
 function App() {
   return (
     <div>
-      <ChallengeSonnetCentral />
+      <ChallengeScrimbafest />
     </div>
   );
 }
