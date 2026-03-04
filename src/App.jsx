@@ -31,11 +31,13 @@ import ChallengeVirtualRealitySite from './challenges/virtual-reality-site/index
 import ChallengeEmojiPersonalityTest from './challenges/emoji-personality-test/index.jsx';
 import ChallengeEmployeeSpyingProgram from './challenges/employee-spying-program/index.jsx';
 import ChallengeScrimbafest from './challenges/scrimbafest/index.jsx';
+import ChallengeLegitFileSharing from './challenges/legit-file-sharing/index.jsx';
+import ChallengeBrokenClock from './challenges/broken-clock/index.jsx';
 
 function App() {
   return (
     <div>
-      <ChallengeScrimbafest />
+      <ChallengeBrokenClock />
     </div>
   );
 }
