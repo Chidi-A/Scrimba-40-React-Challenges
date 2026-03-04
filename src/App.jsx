@@ -33,11 +33,13 @@ import ChallengeEmployeeSpyingProgram from './challenges/employee-spying-program
 import ChallengeScrimbafest from './challenges/scrimbafest/index.jsx';
 import ChallengeLegitFileSharing from './challenges/legit-file-sharing/index.jsx';
 import ChallengeBrokenClock from './challenges/broken-clock/index.jsx';
+import ChallengeSketchOMatic from './challenges/sketch-o-matic/index.jsx';
+import ChallengeDebatable from './challenges/Debatable/index.jsx';
 
 function App() {
   return (
     <div>
-      <ChallengeBrokenClock />
+      <ChallengeDebatable />
     </div>
   );
 }

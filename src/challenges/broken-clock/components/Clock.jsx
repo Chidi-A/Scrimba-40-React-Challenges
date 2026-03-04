@@ -37,8 +37,8 @@ export default function Clock(props) {
 
   const dayName = time.toLocaleString([], { weekday: 'long' });
   const dayNumber = time.getDate();
-  const month = time.toLocaleString([], { month: 'long' });
-  const year = time.getFullYear();
+  const _month = time.toLocaleString([], { month: 'long' });
+  const _year = time.getFullYear();
   const clockTime = time.toLocaleString([], {
     hour: 'numeric',
     minute: '2-digit',
