@@ -35,11 +35,14 @@ import ChallengeLegitFileSharing from './challenges/legit-file-sharing/index.jsx
 import ChallengeBrokenClock from './challenges/broken-clock/index.jsx';
 import ChallengeSketchOMatic from './challenges/sketch-o-matic/index.jsx';
 import ChallengeDebatable from './challenges/Debatable/index.jsx';
+import ChallengePokémon from './challenges/pookémon/index.jsx';
+import ChallengeScrimbatronic from './challenges/scrimbatronic/index.jsx';
+import ChallengeSpaceWarrior from './challenges/space-warrior/index.jsx';
 
 function App() {
   return (
     <div>
-      <ChallengeDebatable />
+      <ChallengeSpaceWarrior />
     </div>
   );
 }
